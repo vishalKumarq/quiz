@@ -1,0 +1,34 @@
+[{"question":"Which of the following models is NOT a generative AI model",
+"answers":[
+    {"text":"BERT (Bidirectional Encoder Representations from Transformers)", "correct":false}, 
+    {"text":"CNN (Convolution Neural Network)", "correct":true},
+    {"text":"GPT-4 (Generative Pre-trained Transformer 4)", "correct":false},
+    {"text":"Generative adversarial networks", "correct":false}]
+},
+{"question":"what is a prompt?",
+"answers":[{"text":"A prompt is a short piece of text that is given to the large language model as input, and it can be used to control the output of the model in many ways.", "correct":false}, 
+{"text":"A prompt is a short piece of text that is given to the small language model as input, and it can be used to control the output of the model in many ways.", "correct":false},
+{"text":"A prompt is a short piece of code that is given to the large language model as input, and it can be used to control the output of the model in many ways.", "correct":true},
+{"text":"A prompt is a short piece of text that is given to the large language model as input, and it can be used to control the input of the model in many ways.", "correct":false}]
+},
+{"question":"Generative AI is a type of Artificial intelligence (AI) that can ",
+"answers":[{"text":" create new content, such as discrete numbers, classes, and probabilities. It does this by learning from existing data and then using that knowledge to generate new and unique outputs", "correct":false}, 
+{"text":" only create new content, such as text, images, audio, and video by learning from new data and then using that knowledge to predict a discrete, supervised learning output.", "correct":false},
+{"text":"create new content, such as text, images, audio, and video. It does this by learning from existing data and then using that knowledge to generate new and unique outputs.", "correct":true},
+{"text":"only create new content, such as text, images, audio, and video by learning from new data and then using that knowledge to predict a classification output", "correct":false}]
+},
+{"question":"How can you use a function numpy in python?",
+"answers":[{"text":"numpy ", "correct":false}, 
+{"text":" import numpy as np", "correct":true},
+{"text":"use numpy as np", "correct":false},
+{"text":"none of the above", "correct":false}]
+},
+{"question":"How can you use a function pandas in python?",
+"answers":[{"text":"pandas ", "correct":false}, 
+{"text":" import numpy as np", "correct":true},
+{"text":"use numpy as np", "correct":false},
+{"text":"none of the above", "correct":false}]
+}
+    
+
+]

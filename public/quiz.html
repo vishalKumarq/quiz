@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css"/>
+    <title>Quiz App</title>
+    <style>
+    .logo{display: block;
+        margin-bottom: 50px;
+        margin-top: 2%;
+        width: 100px;
+        position:sticky;
+        top:30px;
+    }
+   
+    * {
+        margin:0;
+        padding:0;
+        font-family: 'Poppins', sans-serif;
+        box-sizing: border-box;
+    }
+    body{
+        background: #ffffff;
+    }
+    .box-quiz{
+        width:100%;
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+    }
+    .app{
+       
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+    }
+    .quiz{
+       
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center; 
+    }
+    .answer-buttons{
+        
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center; 
+    }
+    .btn{ 
+        display:flex;
+        flex-direction:column;
+        justify-content: flex-start;
+        padding:10px;
+    margin-top:10px ;
+width:104%}
+@media (max-width: 600px) {
+    .btn{ 
+        display:flex;
+        flex-direction:column;
+        justify-content: flex-start;
+        padding:10px;
+    margin-top:10px ;
+width:100%}
+  }
+  .correct {
+    background-color: green !important;
+    color:#ffffff
+}
+
+.incorrect {
+    background-color: red !important;
+    color:#ffffff;
+}
+
+  
+    </style>
+</head>
+<body>
+    <div class="box-quiz">
+    <div><img src="img/logo.png" alt="Liftmap" class="logo"></div>
+    <div class="app">
+        <!-- <h1>
+            AI and python Quiz
+        </h1> -->
+        <div class="quiz">
+            <h2 id="question">
+                Question goes here
+            </h2>
+            <div id="answer-buttons">
+                <button class="btn-quiz"> Answer 1</button>
+                <button class="btn-quiz"> Answer 2</button>
+                <button class="btn-quiz"> Answer 3</button>
+                <button class="btn-quiz"> Answer 4</button>
+            </div>
+            <button id="next-btn">Next</button>
+        </div>
+    </div>
+</div>
+    <script type="module" src="script.js"></script>
+</body>
+</html>

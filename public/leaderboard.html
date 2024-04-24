@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leaderboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="index.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+    <main>
+        <!-- <div id="header">
+         <h1>Ranking</h1> 
+        
+        </div> -->
+        <div class="leaderboardContainer1" id="header">
+          <div>
+             <img src="img/logo.png" alt="Liftmap" class="logo">
+          </div>
+          <div>
+            <h1>Ranking</h1> 
+          </div>
+          </div>
+        <div id="leaderboard">
+          <div class="ribbon"></div>
+          <table id="leaderboard1">
+          </table>
+          <div id="buttons">
+            <a href="index.html"><button class="exit">Go to home page</button></a>
+           
+          </div>
+        </div>
+      </main>
+
+  <script>
+    // Fetch data from backend and render the leaderboard
+    async function fetchAndRenderLeaderboard() {
+      try {
+        const response = await fetch('/leaderboard', {
+        method: 'GET',
+        
+      });
+        let data = await response.json();
+       
+        const leaderboard = document.getElementById('leaderboard1');
+        leaderboard.innerHTML = ''; // Clear existing content
+        
+        // Iterate through each row and create leaderboard rows
+        data.forEach((row, index) => {
+          const rowHtml = `
+         
+            <tr>
+              <td class="number">${index + 1}</td>
+              <td class="name">${row.Name.toUpperCase()}</td>
+              <td class="points">
+                ${row.Points}
+              </td>
+            </tr>
+          `;
+          leaderboard.innerHTML += rowHtml;
+        });
+      } catch (error) {
+        console.error('Error fetching leaderboard data:', error);
+      }
+    }
+
+    fetchAndRenderLeaderboard();
+  </script>
+</body>
+</html>

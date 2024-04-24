@@ -1,0 +1,136 @@
+<!-- public/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css"/>
+  <title>Save Data</title>
+</head>
+<body>
+  <div class="box">
+  <div class="leaderboardContainer">
+    <div>
+    <img src="img/logo.png" alt="Liftmap" class="logo">
+  </div>
+    <div>
+  <a href="./leaderboard.html"><button class="leaderboardButton">Leaderboard</button></a>
+</div>
+</div>
+  <h1>LWT Quiz</h1>
+  <form id="dataForm">
+    <div>
+    <input id="name" name="name" placeholder="Name" type="text">
+    <p id="nameError" class="error-message"></p>
+  </div>
+  <div>
+    <input id="email" name="email" placeholder="Valid Email" type="text" >
+    <p id="emailError" class="error-message"></p>
+  </div>
+  <div>
+    <input id="contact" name="contact" placeholder="Contact No." type="text">
+    <p id="contactError" class="error-message"></p>
+  </div>
+    <button type="submit" id="save-data" class="btn-primary save_data">Start Quiz</button>
+  </form>
+  <a href="quiz.html" className="no-decoration" id="quizLink">
+    <button id="nextPage" class="btn-primary nextPage no-decoration">Get Started on your Quiz!</button>
+  </a>
+  </div>
+
+  <script>
+    let nameInput = document.getElementById('name');
+    let emailInput = document.getElementById('email');
+    let contactInput = document.getElementById('contact');
+    let nameError = document.getElementById('nameError');
+    let emailError = document.getElementById('emailError');
+    let contactError = document.getElementById('contactError');
+    let formdata = {
+  name: "",
+  email: "",
+  contact: "",
+};
+    nameInput.addEventListener("change", function(event) {
+  if (event.target.value === "") {
+    nameError.textContent = "Required*";
+  } else {
+    nameError.textContent = "";
+  }
+  formdata.name = event.target.value;
+});
+
+emailInput.addEventListener("change", function(event) {
+  if (event.target.value === "") {
+    emailError.textContent = "Required*";
+  } else {
+    emailError.textContent = "";
+  }
+  formdata.email = event.target.value;
+});
+contactInput.addEventListener("change", function(event) {
+  if (event.target.value === "") {
+    contactError.textContent = "Required*";
+  } else {
+    contactError.textContent = "";
+  }
+  formdata.contact = event.target.value;
+});
+
+
+    document.getElementById('dataForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      let {name, email,contact} = formdata;
+  if (name === "") {
+    nameError.textContent = "Required*";
+  }
+  if (email === ""){
+    emailError.textContent = "Required*";
+  }
+  if (contact === ""){
+    contactError.textContent = "Required*";
+  }
+  if (!name || !email || !contact) {
+        return; // Prevent form submission if any field is empty
+      }
+    
+      const formData = new FormData(this);
+      const data = {};
+      formData.forEach((value, key) => {
+        data[key] = value;
+      });
+  
+      fetch('/save-data', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+      })
+      .then(response => response.json())
+      .then(result => {
+        // alert(result.message);
+        document.getElementById('nextPage').style.display = 'block ';
+        document.getElementById('save-data').style.display = 'none ';
+        let quizLink = document.getElementById('quizLink');
+    quizLink.classList.add("no-decoration");
+        nameInput.value = '';
+    emailInput.value = '';
+    contactInput.value = '';
+    
+    // Reset error messages
+    nameError.textContent = '';
+    emailError.textContent = '';
+    contactError.textContent = '';
+        // After successful submission, add blur event listeners again
+        
+      })
+      .catch(error => {
+        console.error('Error:', error);
+      });
+    });
+    
+  </script>
+  
+</body>
+</html>
