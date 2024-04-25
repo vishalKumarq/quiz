@@ -5,12 +5,12 @@
     {"text":"GPT-4 (Generative Pre-trained Transformer 4)", "correct":false},
     {"text":"Generative adversarial networks", "correct":false}]
 },
-{"question":What is the derivative of the function \( f(x) = 3x^2 + 2x + 1 \) with respect to \( x \)?",
+{"question":What is the derivative of the function ( f(x) = 3x^2 + 2x + 1 ) with respect to ( x )?",
 "answers":[
-    {"text":" \( 6x + 2 \)", "correct":false}, 
-    {"text":"\( 6x \)", "correct":true},
-    {"text":"\( 3x + 2 \)", "correct":false},
-    {"text":" \( 6x + 1 \)", "correct":false}]
+    {"text":" ( 6x + 2 )", "correct":false}, 
+    {"text":"( 6x )", "correct":true},
+    {"text":"( 3x + 2 )", "correct":false},
+    {"text":"( 6x + 1 )", "correct":false}]
 },
 {"question":"what is a prompt?",
 "answers":[{"text":"A prompt is a short piece of text that is given to the large language model as input, and it can be used to control the output of the model in many ways.", "correct":false}, 
