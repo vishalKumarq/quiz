@@ -11,11 +11,11 @@
 {"text":"A prompt is a short piece of code that is given to the large language model as input, and it can be used to control the output of the model in many ways.", "correct":true},
 {"text":"A prompt is a short piece of text that is given to the large language model as input, and it can be used to control the input of the model in many ways.", "correct":false}]
 },
-{"question":"Generative AI is a type of Artificial intelligence (AI) that can ",
-"answers":[{"text":" create new content, such as discrete numbers, classes, and probabilities. It does this by learning from existing data and then using that knowledge to generate new and unique outputs", "correct":false}, 
-{"text":" only create new content, such as text, images, audio, and video by learning from new data and then using that knowledge to predict a discrete, supervised learning output.", "correct":false},
-{"text":"create new content, such as text, images, audio, and video. It does this by learning from existing data and then using that knowledge to generate new and unique outputs.", "correct":true},
-{"text":"only create new content, such as text, images, audio, and video by learning from new data and then using that knowledge to predict a classification output", "correct":false}]
+{"question":"What is a class in Python?",
+"answers":[{"text":"A built-in data type.", "correct":false}, 
+{"text":"A blueprint for creating objects.", "correct":true},
+{"text":"A function that returns a value", "correct":false},
+{"text":"A module for file I/O", "correct":false}]
 },
 {"question":"How can you use a function numpy in python?",
 "answers":[{"text":"numpy ", "correct":false}, 
@@ -23,12 +23,172 @@
 {"text":"use numpy as np", "correct":false},
 {"text":"none of the above", "correct":false}]
 },
-{"question":"How can you use a function pandas in python?",
-"answers":[{"text":"pandas ", "correct":false}, 
-{"text":" import numpy as np", "correct":true},
-{"text":"use numpy as np", "correct":false},
-{"text":"none of the above", "correct":false}]
+{"question":"Which keyword is used to create an instance (object) of a class?",
+"answers":[{"text":"new ", "correct":false}, 
+{"text":"create", "correct":false},
+{"text":"instance", "correct":false},
+{"text":"class", "correct":true}]
+},
+{"question":"What is encapsulation in OOP?",
+"answers":[{"text":"The process of hiding data within a class", "correct":true}, 
+{"text":"The process of creating multiple instances of a class", "correct":false},
+{"text":"The process of defining class methods", "correct":false},
+{"text":"The process of inheritance", "correct":false}]
+},
+{"question":"Which method is automatically called when an object is created from a class?",
+"answers":[{"text":"__init__()", "correct":true}, 
+{"text":"__new__()", "correct":false},
+{"text":"__create__()", "correct":false},
+{"text":"__instance__()", "correct":false}]
+},
+{"question":"In Python, what is the purpose of inheritance?",
+"answers":[{"text":"To create new classes", "correct":false}, 
+{"text":"To allow one class to inherit properties and methods from another", "correct":true},
+{"text":"To override existing methods", "correct":false},
+{"text":"To encapsulate data", "correct":false}]
+},
+{"question":"Which of the following is a common activation function used in convolutional layers?",
+"answers":[{"text":"Sigmoid", "correct":false}, 
+{"text":"ReLU (Rectified Linear Unit)", "correct":true},
+{"text":"Tanh (Hyperbolic Tangent)", "correct":false},
+{"text":"Linear (Identity).", "correct":false}]
+},
+{"question":"Pooling layers in CNNs are primarily used for:",
+"answers":[{"text":"Reducing the size of the input volume.", "correct":true}, 
+{"text":"Increasing the size of the input volume.", "correct":false},
+{"text":"Adding more convolutional filters.","correct":false},
+{"text":"Introducing non-linearity into the network.", "correct":false}]
+},
+{"question":"What is the purpose of the Flatten layer in a Convolutional Neural Network?",
+"answers":[{"text":"To convert a 3D volume into a 1D vector.", "correct":true}, 
+{"text":"To apply a kernel filter to the input volume.", "correct":false},
+{"text":" To increase the depth of the input volume.","correct":false},
+{"text":"To introduce non-linearity into the network.", "correct":false}]
+},
+{"question":"Which of the following is not a common practice for improving the training of CNNs?",
+"answers":[{"text":"Data Augmentation.", "correct":false}, 
+{"text":"Dropout.", "correct":false},
+{"text":"Batch Normalization.","correct":false},
+{"text":"Increasing the learning rate exponentially over time", "correct":true}]
+},
+{"question":"How can you access the weights of a PyTorch neural network model?",
+"answers":[{"text":" Using the model.weights attribute.", "correct":false}, 
+{"text":"By iterating over model.parameters().", "correct":true},
+{"text":"Accessing model.weights() method.","correct":false},
+{"text":"There is no direct way to access weights in PyTorch.", "correct":false}]
+},
+{"question":"Which loss function is commonly used for multi-class classification problems in PyTorch?",
+"answers":[{"text":"Mean Squared Error (MSE)", "correct":false}, 
+{"text":"Cross-Entropy Loss.", "correct":true},
+{"text":"Binary Cross-Entropy Loss.","correct":false},
+{"text":"Kullback-Leibler Divergence.", "correct":false}]
+},
+{"question":"Which loss function is commonly used for binary classification problems in PyTorch?",
+"answers":[{"text":"Mean Squared Error (MSE)", "correct":false}, 
+{"text":"Cross-Entropy Loss.", "correct":false},
+{"text":"Binary Cross-Entropy Loss.","correct":true},
+{"text":"Kullback-Leibler Divergence.", "correct":false}]
+},
+{"question":"Which loss function is used for regression problems in PyTorch?",
+"answers":[{"text":"Mean Squared Error (MSE)", "correct":true}, 
+{"text":"Cross-Entropy Loss.", "correct":false},
+{"text":"Binary Cross-Entropy Loss.","correct":false},
+{"text":"Kullback-Leibler Divergence.", "correct":false}]
+},
+{"question":"What does the `padding` parameter in PyTorch's `nn.Conv2d` module do?",
+"answers":[{"text":"It specifies the number of output channels.", "correct":false}, 
+{"text":"It specifies the size of the kernel.", "correct":false},
+{"text":"It specifies the amount of zero-padding added to both sides of the input.","correct":true},
+{"text":"It specifies the size of the input.", "correct":false}]
+},
+{"question":"Which of the following statements about the `stride` parameter in PyTorch's `nn.Conv2d` module is true?",
+"answers":[{"text":"It specifies the size of the input.", "correct":false}, 
+{"text":" It specifies the number of output channels.", "correct":false},
+{"text":"It specifies the amount the kernel is shifted over the input.","correct":true},
+{"text":"It specifies the size of the kernel.", "correct":false}]
+},
+{"question":"What does a `stride` of 2 in a 2D convolutional layer mean?",
+"answers":[{"text":"The kernel is moved 2 pixels at a time.", "correct":true}, 
+{"text":"The kernel is moved 2 pixels to the right and 2 pixels down.", "correct":false},
+{"text":"The kernel is moved 2 pixels to the left and 2 pixels up.","correct":false},
+{"text":" The kernel is moved 2 pixels to the right.", "correct":false}]
+},
+{"question":"In PyTorch, what is the default value of the `padding` parameter in the `nn.Conv2d` module?",
+"answers":[{"text":"0", "correct":true}, 
+{"text":"1", "correct":false},
+{"text":"2","correct":false},
+{"text":"None", "correct":false}]
+},
+{"question":"If a 5x5 kernel is convolved over a 28x28 input with a stride of 1 and no padding, what is the size of the output?",
+"answers":[{"text":"24x24", "correct":false}, 
+{"text":"26x26", "correct":true},
+{"text":"28x28","correct":false},
+{"text":" 30x30", "correct":false}]
+},
+{"question":"What effect does increasing the `stride` parameter in a convolutional layer have on the output size?",
+"answers":[{"text":"Increases the output size.", "correct":false}, 
+{"text":"Decreases the output size.", "correct":true},
+{"text":"No effect on the output size.","correct":false},
+{"text":"Increases the number of output channels.", "correct":false}]
+},
+{"question":"What does a `padding` of `(1, 2)` in a 2D convolutional layer mean?",
+"answers":[{"text":"1 pixel of padding on all sides.", "correct":false}, 
+{"text":"1 pixel of padding on the top and bottom, 2 pixels on the left and right .", "correct":true},
+{"text":"2 pixels of padding on all sides.","correct":false},
+{"text":"No padding.", "correct":false}]
+},
+{"question":" If a 3x3 kernel is convolved over a 32x32 input with a stride of 2 and no padding, what is the size of the output?",
+"answers":[{"text":"16x16", "correct":false}, 
+{"text":"15x15", "correct":true},
+{"text":"17x17","correct":false},
+{"text":"14x14", "correct":false}]
+},
+{"question":"In PyTorch, what module is used to create a fully connected layer?",
+"answers":[{"text":"`nn.Conv2d`", "correct":false}, 
+{"text":"`nn.MaxPool2d`", "correct":false},
+{"text":"`nn.Linear`","correct":true},
+{"text":"`nn.BatchNorm2d`", "correct":false}]
+},
+{"question":"What does the `in_features` parameter represent in PyTorch's `nn.Linear` module?",
+"answers":[{"text":"The number of output features ", "correct":false}, 
+{"text":"The number of input features", "correct":true},
+{"text":"The number of neurons in the layer","correct":false},
+{"text":"The number of layers in the network", "correct":false}]
+},
+{"question":"If you have an input tensor of size `(batch_size, 64)` and you pass it through a fully connected layer with `out_features=128`, what will be the size of the output tensor?",
+"answers":[{"text":"`(batch_size, 64)`", "correct":false}, 
+{"text":"`(batch_size, 128)`", "correct":true},
+{"text":"`(batch_size, 192)`","correct":false},
+{"text":"`(batch_size, 256)`", "correct":false}]
+},
+{"question":"In PyTorch, which class is commonly used to perform backpropagation and update the model parameters?",
+"answers":[{"text":"`torch.optim.SGD`", "correct":true}, 
+{"text":"`torch.nn.Module`", "correct":false},
+{"text":" `torch.autograd.backward()`","correct":false},
+{"text":"`torch.nn.CrossEntropyLoss`", "correct":false}]
+},
+{"question":"What does the `zero_grad()` method do in PyTorch?",
+"answers":[{"text":"Initializes all model parameters to zero", "correct":false}, 
+{"text":"Resets the gradients of all model parameters to zero", "correct":true},
+{"text":"Sets the learning rate to zero","correct":false},
+{"text":"Resets the model to its initial state", "correct":false}]
+},
+{"question":"Which of the following is the correct sequence of steps for backpropagation in PyTorch?",
+"answers":[{"text":"Forward pass, loss computation, backward pass, optimizer step.", "correct":true}, 
+{"text":"Backward pass, forward pass, loss computation, optimizer step.", "correct":false},
+{"text":"Loss computation, forward pass, backward pass, optimizer step.","correct":false},
+{"text":"Forward pass, backward pass, loss computation, optimizer step.", "correct":false}]
+},
+{"question":" Which of the following is true about an orthogonal matrix?",
+"answers":[{"text":"Its transpose is its inverse .", "correct":true}, 
+{"text":" Its determinant is always 1 .", "correct":false},
+{"text":"Its determinant is always -1 .","correct":false},
+{"text":" It cannot have negative eigenvalues .", "correct":false}]
+},
+{"question":"What is the result of multiplying a  3 \u00D7 2  matrix by a  2 \u00D7 4  matrix?",
+"answers":[{"text":" A  2 \u00D7 2  matrix .", "correct":false}, 
+{"text":" A  3 \u00D7 4  matrix.", "correct":true},
+{"text":"A  2 \u00D7 3  matrix.","correct":false},
+{"text":"A  3 \u00D7 3  matrix .", "correct":false}]
 }
-    
-
 ]
