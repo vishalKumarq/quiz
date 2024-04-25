@@ -12,6 +12,13 @@
     {"text":"( 3x + 2 )", "correct":false},
     {"text":"( 6x + 1 )", "correct":false}]
 },
+{"question":"In matrix multiplication, the number of columns in the first matrix must equal the number of rows in the second matrix. This is known as:",
+"answers":[
+    {"text":"The commutative property ", "correct":false}, 
+    {"text":"The distributive property ", "correct":false},
+    {"text":"The associative property", "correct":false},
+    {"text":"The matrix multiplication rule ", "correct":true}]
+},
 {"question":"What is the rank of the following tensor: \n [[1, 2, 3],\n  [4, 5, 6],\n   [7, 8, 9]]\n",
 "answers":[
     {"text":"1", "correct":false}, 
