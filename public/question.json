@@ -12,12 +12,33 @@
     {"text":"( 3x + 2 )", "correct":false},
     {"text":"( 6x + 1 )", "correct":false}]
 },
+{"question":"Which of the following activation functions is linear?",
+"answers":[
+    {"text":" ReLU (Rectified Linear Unit) ", "correct":false}, 
+    {"text":"Sigmoid", "correct":false},
+    {"text":"Tanh (Hyperbolic Tangent)", "correct":false},
+    {"text":"Identity ", "correct":true}]
+},
+{"question":" In gradient descent optimization, what does the learning rate control?",
+"answers":[
+    {"text":" The speed at which the model learns ", "correct":false}, 
+    {"text":"The size of the updates to the model weights", "correct":true},
+    {"text":"The number of epochs", "correct":false},
+    {"text":"The batch size", "correct":false}]
+},
 {"question":"In a deck of playing cards, what is the probability of drawing a diamond or a face card (jack, queen, or king)",
 "answers":[
     {"text":" 3/13", "correct":false}, 
     {"text":"1/4", "correct":false},
     {"text":"5/13", "correct":true},
     {"text":"1/13", "correct":false}]
+},
+{"question":"Which of the following is used to evaluate the performance of a classification model?",
+"answers":[
+    {"text":"Mean Absolute Error (MAE) ", "correct":false}, 
+    {"text":"Root Mean Squared Error (RMSE)  ", "correct":false},
+    {"text":"Mean Squared Error (MSE)  ", "correct":false},
+    {"text":"Accuracy ", "correct":true}]
 },
 {"question":"A multiple-choice test has 10 questions. Each question has 4 choices, and only one choice is correct. If you guess on each question, what is the probability of getting exactly 5 questions correct?",
 "answers":[
