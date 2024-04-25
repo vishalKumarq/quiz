@@ -15,8 +15,8 @@
 {"question":"In a deck of playing cards, what is the probability of drawing a diamond or a face card (jack, queen, or king)",
 "answers":[
     {"text":" 3/13", "correct":false}, 
-    {"text":"1/4", "correct":true},
-    {"text":"5/13", "correct":false},
+    {"text":"1/4", "correct":false},
+    {"text":"5/13", "correct":true},
     {"text":"1/13", "correct":false}]
 },
 {"question":"what is a prompt?",
