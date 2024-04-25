@@ -9,7 +9,7 @@
 "answers":[
     {"text":"pd.load_csv()", "correct":false}, 
     {"text":"pd.read_file()", "correct":false},
-    {"text":pd.read_csv()", "correct":true},
+    {"text":"pd.read_csv()", "correct":true},
     {"text":"pd.import_csv()", "correct":false}]
 },
 {"question":"What is the derivative of the function ( f(x) = 3x^2 + 2x + 1 ) with respect to ( x )?",
