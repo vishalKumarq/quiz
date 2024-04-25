@@ -19,6 +19,34 @@
     {"text":"7/8", "correct":true},
     {"text":"1/2", "correct":false}]
 },
+{"question":"In the quicksort algorithm, which element is chosen as the pivot?",
+"answers":[
+    {"text":"The first element of the array", "correct":false}, 
+    {"text":"The middle element of the array ", "correct":false},
+    {"text":"The last element of the array", "correct":false},
+    {"text":"Any element of the array", "correct":true}]
+},
+{"question":"Which of the following is NOT a step in the quicksort algorithm?",
+"answers":[
+    {"text":"Partitioning ", "correct":false}, 
+    {"text":"Merging", "correct":true},
+    {"text":"Swapping ", "correct":false},
+    {"text":"Recursion", "correct":false}]
+},
+{"question":"Which function is used to check if a file exists using the `os` module?",
+"answers":[
+    {"text":"os.exist(file_path)", "correct":false}, 
+    {"text":"os.file_exists(file_path)", "correct":false},
+    {"text":"os.path.exists(file_path)", "correct":true},
+    {"text":"os.check_file(file_path)", "correct":false}]
+},
+{"question":"In the quicksort algorithm, after partitioning the array, where is the pivot element placed?",
+"answers":[
+    {"text":"At the beginning of the array", "correct":false}, 
+    {"text":"At the end of the array", "correct":false},
+    {"text":"At its correct sorted position ", "correct":true},
+    {"text":"It depends on the implementation ", "correct":false}]
+},
 {"question":"If two events A and B are independent, what is 𝑃(𝐴∩𝐵) if 𝑃(𝐴)=0.4 and 𝑃(𝐵)=0.3?",
 "answers":[
     {"text":"0.12", "correct":true}, 
@@ -46,6 +74,13 @@
     {"text":"Two-dimensional array ", "correct":false},
     {"text":"Multi-dimensional array", "correct":true},
     {"text":" Linear transformation ", "correct":false}]
+},
+{"question":"Which function is used to join one or more path components intelligently using the `os` module?",
+"answers":[
+    {"text":"os.concatenate()", "correct":false}, 
+    {"text":"os.concat()", "correct":false},
+    {"text":"os.join()", "correct":true},
+    {"text":"os.path.join()", "correct":false}]
 },
 {"question":"What is the probability of rolling a prime number on a fair six-sided die?",
 "answers":[
