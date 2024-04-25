@@ -12,6 +12,13 @@
     {"text":"( 3x + 2 )", "correct":false},
     {"text":"( 6x + 1 )", "correct":false}]
 },
+{"question":"You flip a fair coin three times. What is the probability of getting at least one head?",
+"answers":[
+    {"text":"1/8", "correct":false}, 
+    {"text":"3/8", "correct":false},
+    {"text":"7/8", "correct":true},
+    {"text":"1/2", "correct":false}]
+},
 {"question":"If two events A and B are independent, what is 𝑃(𝐴∩𝐵) if 𝑃(𝐴)=0.4 and 𝑃(𝐵)=0.3?",
 "answers":[
     {"text":"0.12", "correct":true}, 
