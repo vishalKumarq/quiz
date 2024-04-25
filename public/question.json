@@ -12,7 +12,7 @@
     {"text":"( 3x + 2 )", "correct":false},
     {"text":"( 6x + 1 )", "correct":false}]
 },
-{"question":"What is the rank of the following tensor: \\n",
+{"question":"What is the rank of the following tensor: \\n [[1, 2, 3],\\n",
 "answers":[
     {"text":"1", "correct":false}, 
     {"text":"2", "correct":true},
