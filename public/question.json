@@ -114,8 +114,8 @@
 "answers":[
     {"text":" 3/13", "correct":false}, 
     {"text":"1/4", "correct":false},
-    {"text":"5/13", "correct":true},
-    {"text":"11/26", "correct":false}]
+    {"text":"5/13", "correct":false},
+    {"text":"11/26", "correct":true}]
 },
 {"question":"Which of the following is used to evaluate the performance of a classification model?",
 "answers":[
