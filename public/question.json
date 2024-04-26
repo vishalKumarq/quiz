@@ -86,8 +86,8 @@
 "answers":[
     {"text":"os.concatenate()", "correct":false}, 
     {"text":"os.concat()", "correct":false},
-    {"text":"os.join()", "correct":true},
-    {"text":"os.path.join()", "correct":false}]
+    {"text":"os.join()", "correct":false},
+    {"text":"os.path.join()", "correct":true}]
 },
 {"question":"What is the probability of rolling a prime number on a fair six-sided die?",
 "answers":[
