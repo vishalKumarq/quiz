@@ -305,11 +305,11 @@
 {"text":"Loss computation, forward pass, backward pass, optimizer step.","correct":false},
 {"text":"Forward pass, backward pass, loss computation, optimizer step.", "correct":false}]
 },
-{"question":" Which of the following is true about an orthogonal matrix?",
-"answers":[{"text":"Its transpose is its inverse .", "correct":true}, 
+{"question":" Which of the following is NOT true about an orthogonal matrix?",
+"answers":[{"text":"Its transpose is its inverse .", "correct":false}, 
 {"text":" Its determinant is always 1 .", "correct":false},
 {"text":"Its determinant is always -1 .","correct":false},
-{"text":" It cannot have negative eigenvalues .", "correct":false}]
+{"text":" It cannot have negative eigenvalues .", "correct":true}]
 },
 {"question":"What is the result of multiplying a  3 \u00D7 2  matrix by a  2 \u00D7 4  matrix?",
 "answers":[{"text":" A  2 \u00D7 2  matrix .", "correct":false}, 
