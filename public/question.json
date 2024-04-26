@@ -14,8 +14,8 @@
 },
 {"question":"What is the derivative of the function ( f(x) = 3x^2 + 2x + 1 ) with respect to ( x )?",
 "answers":[
-    {"text":" ( 6x + 2 )", "correct":false}, 
-    {"text":"( 6x )", "correct":true},
+    {"text":" ( 6x + 2 )", "correct":true}, 
+    {"text":"( 6x )", "correct":false},
     {"text":"( 3x + 2 )", "correct":false},
     {"text":"( 6x + 1 )", "correct":false}]
 },
